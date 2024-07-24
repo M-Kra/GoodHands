@@ -1,0 +1,119 @@
+@import "settings/fonts";
+@import "settings/colors";
+
+.help {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    font-size: 38px;
+    letter-spacing: -0.76px;
+    line-height: 55px;
+    margin-top: 30px;
+  }
+  &__decoration{
+    margin-top: 20px;
+  }
+
+  &__categories {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 50px 0 50px 0 ;
+
+    &--label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 60px;
+      white-space: pre-line;
+      padding: 0 40px;
+      color: $dark-yellow;
+    }
+
+    &--label.active{
+      border: 2px solid $dark-green;
+
+    }
+
+    &--cat {
+      display: none;
+
+    }
+  }
+
+  &__para {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 500px;
+  }
+}
+
+
+.list {
+  margin-top: 50px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2px;
+    border-bottom: 1px solid $dark-green;
+
+    &--right{
+      padding-right: 30px;
+    }
+  }
+
+  &__name {
+    font-family: $font-alt;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 8px;
+  }
+
+  &__descr {
+    font-family: $font-alt;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  &__what {
+    font-family: $font-alt;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 8px;
+
+  }
+
+}
+
+
+.pagination {
+  display: flex;
+  gap: 30px;
+  margin: auto;
+  color: $visited-blue;
+  cursor: pointer;
+}
+
+.page-item {
+  padding: 10px;
+}
+
+.active {
+  border: 1px solid $yellow;
+  padding: 13px;
+}

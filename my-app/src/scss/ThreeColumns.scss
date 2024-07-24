@@ -1,0 +1,32 @@
+@import "../scss/settings/fonts";
+@import "../scss/settings/colors";
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  background-color: $yellow;
+  padding: 55px 30px;
+  text-align: center;
+
+  .box {
+    width: 450px;
+    color: $dark-green;
+
+
+    &__number {
+      font-size: 80px;
+      font-weight: 300;
+      margin-bottom: 15px;
+    }
+    &__title {
+      font-weight: 600;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .column__decoration {
+      line-height: 25px;
+    }
+
+  }
+}

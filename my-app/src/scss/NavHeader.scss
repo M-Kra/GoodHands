@@ -1,0 +1,49 @@
+@import "../scss/settings/fonts";
+@import "../scss/settings/colors";
+
+.navigation {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 145px;
+  gap: 30px;
+  z-index: 4;
+
+  &__login {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    .navLink {
+      text-decoration: none;
+      color: $black;
+      padding: 8px;
+      &:hover {
+        cursor: pointer;
+        border: 1px solid $yellow;
+      }
+    }
+    .navLinkLog {
+      text-decoration: none;
+      color: $dark-gray;
+      padding: 8px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+    gap: 30px;
+
+    .navLink {
+      padding: 8px 16px;
+      text-decoration: none;
+      &:hover {
+        cursor: pointer;
+        border: 1px solid $dark-green;
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+@import "../scss/settings/fonts";
+@import "../scss/settings/colors";
+
+.contact {
+  height: 100vh;
+  width: 100vw;
+  background: url("../assets/Background-Contact-Form.jpg") left center no-repeat;
+  background-size: contain;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.78);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to left, #fff 50%, rgba(255, 255, 255, 0));
+  }
+
+  &__info {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding-right: 200px;
+
+    &--form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+
+      &__header {
+        font-size: 30px;
+        margin-bottom: 35px;
+      }
+
+      &__decoration {
+        margin-bottom: 70px;
+      }
+
+      &__success {
+        margin: -40px 0 40px;
+        color: green;
+        font-weight: 700;
+      }
+
+      &__input {
+        display: flex;
+        gap: 30px;
+
+        &--box {
+          margin-bottom: 30px;
+        }
+
+        &--label {
+          font-family: $font-base;
+          font-size: 13px;
+          font-weight: 600;
+        }
+
+        &--name, &--mail {
+          display: block;
+          border: none;
+          border-bottom: 1px solid $dark-green;
+          background-color: transparent;
+          line-height: 30px;
+          padding-right: 50px;
+          margin-bottom: 20px;
+
+          &::placeholder {
+            color: rgba(60, 60, 60, 0.15);
+          }
+        }
+      }
+
+      &__textarea {
+        display: block;
+        margin-top: 15px;
+        border: none;
+        border-bottom: 1px solid $dark-green;
+        background-color: transparent;
+        width: 100%;
+        min-height: 100px;
+        resize: none;
+
+        &::placeholder {
+          color: rgba(60, 60, 60, 0.15);
+        }
+
+        &--label {
+          font-family: $font-base;
+          font-size: 13px;
+          font-weight: 600;
+        }
+      }
+
+      &__send {
+        align-self: flex-end;
+        margin-top: 40px;
+        padding: 13px 50px;
+        border: 1px solid $dark-green;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer {
+    &__space {
+      margin-left: 200px;
+    }
+
+    &__copywright {
+    }
+
+    &__list {
+      display: flex;
+      gap: 15px;
+      margin-right: 200px;
+    }
+  }
+}

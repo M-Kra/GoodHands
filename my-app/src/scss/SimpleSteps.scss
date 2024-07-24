@@ -1,0 +1,81 @@
+@import "../scss/settings/fonts";
+@import "../scss/settings/colors";
+
+.instructionSteps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__header {
+    text-align: center;
+    margin: 25px;
+    font-size: 35px;
+  }
+  &__decoration {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px 50px;
+  background-color: $light-gray;
+
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    width: 150px;
+    color: $yellow;
+
+    &__icon {
+      margin-bottom: 20px;
+
+    }
+
+    &__title {
+      position: relative;
+      text-align: center;
+      margin-bottom: 15px;
+
+      &::after {
+        position: absolute;
+        width: 80%;
+        top: 100%;
+        right: 50%;
+        content: "";
+        border: 1px solid $dark-yellow;
+        margin-top: 10px;
+        transform: translateX(50%) translateY(50%);
+      }
+    }
+  }
+    &__description {
+      text-align:center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  }
+
+  .navLinkSteps {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 35px;
+    font-size: 30px;
+    margin: 30px;
+    padding: 20px 80px;
+    border: 1px solid $dark-green;
+
+    &:visited {
+      color: $visited-blue;
+    }
+  }
