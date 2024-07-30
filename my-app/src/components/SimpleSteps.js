@@ -35,7 +35,7 @@ const SimpleSteps = () => {
                     <p className="box__description">Kurier przyjedzie w dogodnym miejscu</p>
                 </div>
             </div>
-            <NavLink className="navLinkSteps" to="/login">
+            <NavLink className="navLinkSteps" to="/logowanie">
                 <span>Oddaj </span>
                 <span>Rzeczy</span>
             </NavLink>

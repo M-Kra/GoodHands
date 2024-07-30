@@ -108,7 +108,8 @@ const Contact = () => {
                                     <input className="form__input--mail" placeholder="sample@mail.com" value={mailValue}
                                            onChange={(e) => setMailValue(e.target.value)} />
                                 </label>
-                                {wrongMail && <div style={{
+                                {wrongMail &&
+                                    <div style={{
                                     color: "red",
                                     fontSize: "12px",
                                     fontWeight: "700",
@@ -122,7 +123,8 @@ const Contact = () => {
                                 <textarea className="form__textarea" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                                           value={textValue} onChange={(e) => setTextValue(e.target.value)} />
                             </label>
-                            {wrongText && <div style={{
+                            {wrongText &&
+                                <div style={{
                                 color: "red",
                                 fontSize: "12px",
                                 fontWeight: "700",

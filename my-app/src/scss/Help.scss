@@ -35,6 +35,12 @@
       white-space: pre-line;
       padding: 0 40px;
       color: $dark-yellow;
+      cursor: pointer;
+
+      &:hover {
+        border: 1px solid $yellow;
+        cursor: pointer;
+      }
     }
 
     &--label.active{

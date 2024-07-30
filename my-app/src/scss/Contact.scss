@@ -121,6 +121,10 @@
         padding: 13px 50px;
         border: 1px solid $dark-green;
         background-color: transparent;
+        &:hover {
+          border: 1px solid $yellow;
+          cursor: pointer;
+        }
       }
     }
   }

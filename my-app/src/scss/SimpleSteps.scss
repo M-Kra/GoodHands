@@ -75,7 +75,8 @@
     padding: 20px 80px;
     border: 1px solid $dark-green;
 
-    &:visited {
-      color: $visited-blue;
+    &:hover {
+      border: 1px solid $yellow;
+      cursor: pointer;
     }
   }
